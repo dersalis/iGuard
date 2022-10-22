@@ -11,6 +11,7 @@
 		DAB6DEA129043E9700E6CC8B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB6DEA029043E9700E6CC8B /* ContentView.swift */; };
 		DAB6DEA329043E9800E6CC8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB6DEA229043E9800E6CC8B /* Assets.xcassets */; };
 		DAB6DEA629043E9800E6CC8B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB6DEA529043E9800E6CC8B /* Preview Assets.xcassets */; };
+		DAB6DEAF2904534500E6CC8B /* ColumnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB6DEAE2904534500E6CC8B /* ColumnView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		DAB6DEA029043E9700E6CC8B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DAB6DEA229043E9800E6CC8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAB6DEA529043E9800E6CC8B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DAB6DEAE2904534500E6CC8B /* ColumnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumnView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		DAB6DE9D29043E9700E6CC8B /* iGuard */ = {
 			isa = PBXGroup;
 			children = (
+				DAB6DEAC290452F300E6CC8B /* View */,
 				DAB6DE9E29043E9700E6CC8B /* iGuardApp.swift */,
 				DAB6DEA029043E9700E6CC8B /* ContentView.swift */,
 				DAB6DEA229043E9800E6CC8B /* Assets.xcassets */,
@@ -65,6 +68,22 @@
 				DAB6DEA529043E9800E6CC8B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DAB6DEAC290452F300E6CC8B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DAB6DEAD290452FA00E6CC8B /* WeekChart */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DAB6DEAD290452FA00E6CC8B /* WeekChart */ = {
+			isa = PBXGroup;
+			children = (
+				DAB6DEAE2904534500E6CC8B /* ColumnView.swift */,
+			);
+			path = WeekChart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAB6DEAF2904534500E6CC8B /* ColumnView.swift in Sources */,
 				DAB6DEA129043E9700E6CC8B /* ContentView.swift in Sources */,
 				DAB6DE9F29043E9700E6CC8B /* iGuardApp.swift in Sources */,
 			);
