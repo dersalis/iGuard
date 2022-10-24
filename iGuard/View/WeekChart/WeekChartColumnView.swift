@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct WeekChartColumnView: View {
-    var data: ChartColumnData
+    var data: ChartColumn
     
     @State private var isAnimating: Bool = false
     
@@ -36,7 +36,7 @@ struct WeekChartColumnView: View {
 }
 
 struct ColumnView_Previews: PreviewProvider {
-    static var data: ChartColumnData = ChartColumnData(id: 1, name: "S", value: 45)
+    static var data: ChartColumn = ChartColumn(id: 1, name: "S", value: 45)
     
     static var previews: some View {
         WeekChartColumnView(data: data)

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ChartColumnData: Identifiable {
+struct ChartColumn: Identifiable {
     var id: Int
     var name: String
     var value: CGFloat

@@ -8,8 +8,8 @@
 import Foundation
 import SwiftUI
 
-struct ChartData {
-    var columns: [ChartColumnData]
+struct Chart {
+    var columns: [ChartColumn]
     var avarage: CGFloat {
         var sum: CGFloat = 0
         var avarage: CGFloat = 0

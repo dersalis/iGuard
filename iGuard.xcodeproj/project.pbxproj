@@ -18,11 +18,11 @@
 		DAB6DEB829057C8600E6CC8B /* PanelMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB6DEB729057C8600E6CC8B /* PanelMessageView.swift */; };
 		DAB6DEBA29057F7400E6CC8B /* PanelCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB6DEB929057F7400E6CC8B /* PanelCounterView.swift */; };
 		DAB6DEBC290580EC00E6CC8B /* PanelWithCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB6DEBB290580EC00E6CC8B /* PanelWithCounterView.swift */; };
-		DAB6DEBE2905839600E6CC8B /* PanelWithCounterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB6DEBD2905839600E6CC8B /* PanelWithCounterData.swift */; };
+		DAB6DEBE2905839600E6CC8B /* PanelWithCounterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB6DEBD2905839600E6CC8B /* PanelWithCounterModel.swift */; };
 		DAB6DEC0290586D500E6CC8B /* PanelWithCounterAndChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB6DEBF290586D500E6CC8B /* PanelWithCounterAndChartView.swift */; };
-		DAB6DEC22905879500E6CC8B /* PanelWithCounterAndChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB6DEC12905879500E6CC8B /* PanelWithCounterAndChartData.swift */; };
-		DAB6DEC42905890200E6CC8B /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB6DEC32905890200E6CC8B /* ChartData.swift */; };
-		DAB6DEC62905897E00E6CC8B /* ChartColumnData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB6DEC52905897E00E6CC8B /* ChartColumnData.swift */; };
+		DAB6DEC22905879500E6CC8B /* PanelWithCounterAndChartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB6DEC12905879500E6CC8B /* PanelWithCounterAndChartModel.swift */; };
+		DAB6DEC42905890200E6CC8B /* ChartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB6DEC32905890200E6CC8B /* ChartModel.swift */; };
+		DAB6DEC62905897E00E6CC8B /* ChartColumnModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB6DEC52905897E00E6CC8B /* ChartColumnModel.swift */; };
 		DAB6DEC92905953A00E6CC8B /* DashboardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB6DEC82905953A00E6CC8B /* DashboardData.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,11 +39,11 @@
 		DAB6DEB729057C8600E6CC8B /* PanelMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelMessageView.swift; sourceTree = "<group>"; };
 		DAB6DEB929057F7400E6CC8B /* PanelCounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelCounterView.swift; sourceTree = "<group>"; };
 		DAB6DEBB290580EC00E6CC8B /* PanelWithCounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelWithCounterView.swift; sourceTree = "<group>"; };
-		DAB6DEBD2905839600E6CC8B /* PanelWithCounterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelWithCounterData.swift; sourceTree = "<group>"; };
+		DAB6DEBD2905839600E6CC8B /* PanelWithCounterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelWithCounterModel.swift; sourceTree = "<group>"; };
 		DAB6DEBF290586D500E6CC8B /* PanelWithCounterAndChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelWithCounterAndChartView.swift; sourceTree = "<group>"; };
-		DAB6DEC12905879500E6CC8B /* PanelWithCounterAndChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelWithCounterAndChartData.swift; sourceTree = "<group>"; };
-		DAB6DEC32905890200E6CC8B /* ChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartData.swift; sourceTree = "<group>"; };
-		DAB6DEC52905897E00E6CC8B /* ChartColumnData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartColumnData.swift; sourceTree = "<group>"; };
+		DAB6DEC12905879500E6CC8B /* PanelWithCounterAndChartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelWithCounterAndChartModel.swift; sourceTree = "<group>"; };
+		DAB6DEC32905890200E6CC8B /* ChartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartModel.swift; sourceTree = "<group>"; };
+		DAB6DEC52905897E00E6CC8B /* ChartColumnModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartColumnModel.swift; sourceTree = "<group>"; };
 		DAB6DEC82905953A00E6CC8B /* DashboardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,8 +110,8 @@
 				DAB6DEAE2904534500E6CC8B /* WeekChartColumnView.swift */,
 				DAB6DEB02905689F00E6CC8B /* WeekChartView.swift */,
 				DAB6DEB22905782B00E6CC8B /* WeekChartAverageLineView.swift */,
-				DAB6DEC32905890200E6CC8B /* ChartData.swift */,
-				DAB6DEC52905897E00E6CC8B /* ChartColumnData.swift */,
+				DAB6DEC32905890200E6CC8B /* ChartModel.swift */,
+				DAB6DEC52905897E00E6CC8B /* ChartColumnModel.swift */,
 			);
 			path = WeekChart;
 			sourceTree = "<group>";
@@ -123,9 +123,9 @@
 				DAB6DEB729057C8600E6CC8B /* PanelMessageView.swift */,
 				DAB6DEB929057F7400E6CC8B /* PanelCounterView.swift */,
 				DAB6DEBB290580EC00E6CC8B /* PanelWithCounterView.swift */,
-				DAB6DEBD2905839600E6CC8B /* PanelWithCounterData.swift */,
+				DAB6DEBD2905839600E6CC8B /* PanelWithCounterModel.swift */,
 				DAB6DEBF290586D500E6CC8B /* PanelWithCounterAndChartView.swift */,
-				DAB6DEC12905879500E6CC8B /* PanelWithCounterAndChartData.swift */,
+				DAB6DEC12905879500E6CC8B /* PanelWithCounterAndChartModel.swift */,
 			);
 			path = Panel;
 			sourceTree = "<group>";
@@ -210,19 +210,19 @@
 			files = (
 				DAB6DEAF2904534500E6CC8B /* WeekChartColumnView.swift in Sources */,
 				DAB6DEA129043E9700E6CC8B /* ContentView.swift in Sources */,
-				DAB6DEC62905897E00E6CC8B /* ChartColumnData.swift in Sources */,
+				DAB6DEC62905897E00E6CC8B /* ChartColumnModel.swift in Sources */,
 				DAB6DEC0290586D500E6CC8B /* PanelWithCounterAndChartView.swift in Sources */,
 				DAB6DE9F29043E9700E6CC8B /* iGuardApp.swift in Sources */,
-				DAB6DEC22905879500E6CC8B /* PanelWithCounterAndChartData.swift in Sources */,
+				DAB6DEC22905879500E6CC8B /* PanelWithCounterAndChartModel.swift in Sources */,
 				DAB6DEB32905782B00E6CC8B /* WeekChartAverageLineView.swift in Sources */,
 				DAB6DEBA29057F7400E6CC8B /* PanelCounterView.swift in Sources */,
-				DAB6DEBE2905839600E6CC8B /* PanelWithCounterData.swift in Sources */,
+				DAB6DEBE2905839600E6CC8B /* PanelWithCounterModel.swift in Sources */,
 				DAB6DEBC290580EC00E6CC8B /* PanelWithCounterView.swift in Sources */,
 				DAB6DEB629057AE100E6CC8B /* PanelTitleView.swift in Sources */,
 				DAB6DEB829057C8600E6CC8B /* PanelMessageView.swift in Sources */,
 				DAB6DEC92905953A00E6CC8B /* DashboardData.swift in Sources */,
 				DAB6DEB12905689F00E6CC8B /* WeekChartView.swift in Sources */,
-				DAB6DEC42905890200E6CC8B /* ChartData.swift in Sources */,
+				DAB6DEC42905890200E6CC8B /* ChartModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

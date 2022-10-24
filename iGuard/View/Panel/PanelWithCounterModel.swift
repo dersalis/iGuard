@@ -1,5 +1,5 @@
 //
-//  PanelWithCounterAndChartData.swift
+//  PanelWithCounterData.swift
 //  iGuard
 //
 //  Created by Damian Ruta on 23/10/2022.
@@ -7,7 +7,6 @@
 
 import Foundation
 
-struct PanelWithCounterAndChartData {
+struct PanelWithCounter {
     var counter: Int
-    var chart: ChartData
 }

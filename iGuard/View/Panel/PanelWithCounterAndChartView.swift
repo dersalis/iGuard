@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PanelWithCounterAndChartView: View {
-    var data: PanelWithCounterAndChartData
+    var data: PanelWithCounterAndChart
     
     var body: some View {
         VStack {
@@ -38,24 +38,24 @@ struct PanelWithCounterAndChartView: View {
             .padding(.top, 10)
             .padding(.bottom, 20)
         }
-        .frame(maxWidth: .infinity, alignment: .leading)
+        .frame(maxWidth: .infinity)
         .background(.secondary.opacity(0.35))
         .cornerRadius(10)
     }
 }
 
 struct PanelWithCounterAndChartView_Previews: PreviewProvider {
-    static var data: PanelWithCounterAndChartData = PanelWithCounterAndChartData(
+    static var data: PanelWithCounterAndChart = PanelWithCounterAndChart(
         counter: 58,
-        chart: ChartData(
+        chart: Chart(
             columns: [
-                ChartColumnData(id: 1, name: "P", value: 62),
-                ChartColumnData(id: 2, name: "W", value: 34),
-                ChartColumnData(id: 3, name: "Ś", value: 13),
-                ChartColumnData(id: 4, name: "C", value: 74),
-                ChartColumnData(id: 5, name: "P", value: 91),
-                ChartColumnData(id: 6, name: "S", value: 61),
-                ChartColumnData(id: 7, name: "N", value: 59),
+                ChartColumn(id: 1, name: "P", value: 62),
+                ChartColumn(id: 2, name: "W", value: 34),
+                ChartColumn(id: 3, name: "Ś", value: 13),
+                ChartColumn(id: 4, name: "C", value: 74),
+                ChartColumn(id: 5, name: "P", value: 91),
+                ChartColumn(id: 6, name: "S", value: 61),
+                ChartColumn(id: 7, name: "N", value: 59),
             ]
         )
     )

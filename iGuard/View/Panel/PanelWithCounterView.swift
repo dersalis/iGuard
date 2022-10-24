@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PanelWithCounterView: View {
-    var data: PanelWithCounterData
+    var data: PanelWithCounter
     
     var body: some View {
         VStack {
@@ -26,14 +26,14 @@ struct PanelWithCounterView: View {
             .padding(.horizontal, 20)
             .padding(.bottom, 15)
         }
-        .frame(maxWidth: .infinity, alignment: .leading)
+        .frame(maxWidth: .infinity)
         .background(.secondary.opacity(0.35))
         .cornerRadius(10)
     }
 }
 
 struct PanelWithCounterView_Previews: PreviewProvider {
-    static let panelData: PanelWithCounterData = PanelWithCounterData(counter: 29)
+    static let panelData: PanelWithCounter = PanelWithCounter(counter: 29)
     
     static var previews: some View {
         PanelWithCounterView(data: panelData)
