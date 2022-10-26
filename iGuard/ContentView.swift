@@ -16,7 +16,7 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            ScrollView {
+            ScrollView(showsIndicators: false) {
                 // MARK: - POJAZDY
                 HStack {
                     Text("Pojazdy")

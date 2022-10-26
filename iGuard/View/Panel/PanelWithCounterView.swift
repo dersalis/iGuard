@@ -11,24 +11,16 @@ struct PanelWithCounterView: View {
     var data: PanelWithCounter
     
     var body: some View {
-        VStack {
-            PanelTitleView(title: "Oczekujące", image: "timer")
-            .padding(.horizontal, 20)
-            .padding(.top, 20)
-            .padding(.bottom, 1)
-            
-            PanelMessageView(message: "Wszystkie aktualnie oczekujące na wstęp na terenie firmy.")
-            .padding(.horizontal, 20)
-            
+        GroupBox(
+            label: Label("Oczekujące", systemImage: "timer")
+        ) {
+            PanelMessageView(message: "Wszystkie aktualnie oczekujące na wstęp na teren firmy.")
+                .padding(.top, 1)
+                
             Divider()
             
             PanelCounterView(value: data.counter, name: "pojazdy")
-            .padding(.horizontal, 20)
-            .padding(.bottom, 15)
         }
-        .frame(maxWidth: .infinity)
-        .background(.secondary.opacity(0.35))
-        .cornerRadius(10)
     }
 }
 

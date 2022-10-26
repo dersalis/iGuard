@@ -11,36 +11,27 @@ struct PanelWithCounterAndChartView: View {
     var data: PanelWithCounterAndChart
     
     var body: some View {
-        VStack {
-            PanelTitleView(title: "Na terenie", image: "arrowshape.right")
-            .padding(.horizontal, 20)
-            .padding(.top, 20)
-            .padding(.bottom, 1)
-            
+        GroupBox(
+            label: Label("Na terenie", systemImage: "arrowshape.right")
+        ) {
             PanelMessageView(message: "Wszystkie aktualnie znajdujące się na terenie firmy.")
-            .padding(.horizontal, 20)
+            .padding(.top, 1)
             
             Divider()
             
             PanelCounterView(value: data.counter, name: "pojazdy")
-            .padding(.horizontal, 20)
             .padding(.bottom, 5)
             
             
             Divider()
             
             PanelMessageView(message: "Poprzedni tydzień")
-            .padding(.horizontal, 20)
+            .padding(.top, 5)
             
             // MARK: - WYKRES
             WeekChartView(data: data.chart)
-            .padding(.horizontal, 20)
-            .padding(.top, 10)
-            .padding(.bottom, 20)
+            .padding(.top, 5)
         }
-        .frame(maxWidth: .infinity)
-        .background(.secondary.opacity(0.35))
-        .cornerRadius(10)
     }
 }
 
