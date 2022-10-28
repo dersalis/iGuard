@@ -8,40 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
-    let carsPanelWithCounterData: PanelWithCounter = dashboardCarsPanelWithCounterData
-    let carsPanelWithCounterAndChartData: PanelWithCounterAndChart = dashboardCarsPanelWithCounterAndChartData
     
-    let guestsPanelWithCounterData: PanelWithCounter = dashboardGuestsPanelWithCounterData
-    let guestsPanelWithCounterAndChartData: PanelWithCounterAndChart = dashboardGuestsPanelWithCounterAndChartData
     
     var body: some View {
-        NavigationView {
-            ScrollView(showsIndicators: false) {
-                // MARK: - POJAZDY
-                HStack {
-                    Text("Pojazdy")
-                        .font(.title)
-                    Spacer()
+        TabView {
+            TableView()
+                .tabItem {
+                    Label("Tablica", systemImage: "tablecells")
                 }
-                
-                PanelWithCounterView(data: carsPanelWithCounterData)
-                PanelWithCounterAndChartView(data: carsPanelWithCounterAndChartData)
-                            
-                // MARK: - GOŚCIE
-                
-                HStack {
-                    Text("Goście")
-                        .font(.title)
-                    Spacer()
+            
+            GuestsView()
+                .tabItem {
+                    Label("Goście", systemImage: "person.2.fill")
                 }
-                
-                PanelWithCounterView(data: guestsPanelWithCounterData)
-                PanelWithCounterAndChartView(data: guestsPanelWithCounterAndChartData)
-                
-            }
-            .navigationTitle("Tablica")
-            .padding(.leading)
-            .padding(.trailing)
+            
+            CarsView()
+                .tabItem {
+                    Label("Pojazdy", systemImage: "car.2.fill")
+                }
+            
+            SettingsView()
+                .tabItem {
+                    Label("Ustawienia", systemImage: "wrench.adjustable.fill")
+                }
         }
     }
 }

@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA2B6536290C6FE800B72240 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2B6535290C6FE800B72240 /* TableView.swift */; };
+		DA2B6538290C716700B72240 /* CarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2B6537290C716700B72240 /* CarsView.swift */; };
+		DA2B653A290C717D00B72240 /* GuestsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2B6539290C717D00B72240 /* GuestsView.swift */; };
+		DA2B653C290C726200B72240 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2B653B290C726200B72240 /* SettingsView.swift */; };
+		DA2FD166290C7E3A00A9F9CC /* GuestDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2FD165290C7E3A00A9F9CC /* GuestDetailsView.swift */; };
+		DA2FD168290C7E4D00A9F9CC /* CarDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2FD167290C7E4D00A9F9CC /* CarDetailsView.swift */; };
+		DA2FD16B290C82F100A9F9CC /* GuestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2FD16A290C82F100A9F9CC /* GuestModel.swift */; };
+		DA2FD16D290C852600A9F9CC /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2FD16C290C852600A9F9CC /* Status.swift */; };
+		DA2FD16F290C869000A9F9CC /* GuestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2FD16E290C869000A9F9CC /* GuestData.swift */; };
+		DA2FD172290C8D8800A9F9CC /* GuestListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2FD171290C8D8800A9F9CC /* GuestListItemView.swift */; };
 		DAB6DE9F29043E9700E6CC8B /* iGuardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB6DE9E29043E9700E6CC8B /* iGuardApp.swift */; };
 		DAB6DEA129043E9700E6CC8B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB6DEA029043E9700E6CC8B /* ContentView.swift */; };
 		DAB6DEA329043E9800E6CC8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB6DEA229043E9800E6CC8B /* Assets.xcassets */; };
@@ -27,6 +37,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA2B6535290C6FE800B72240 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		DA2B6537290C716700B72240 /* CarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsView.swift; sourceTree = "<group>"; };
+		DA2B6539290C717D00B72240 /* GuestsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestsView.swift; sourceTree = "<group>"; };
+		DA2B653B290C726200B72240 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		DA2FD165290C7E3A00A9F9CC /* GuestDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestDetailsView.swift; sourceTree = "<group>"; };
+		DA2FD167290C7E4D00A9F9CC /* CarDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailsView.swift; sourceTree = "<group>"; };
+		DA2FD16A290C82F100A9F9CC /* GuestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestModel.swift; sourceTree = "<group>"; };
+		DA2FD16C290C852600A9F9CC /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		DA2FD16E290C869000A9F9CC /* GuestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestData.swift; sourceTree = "<group>"; };
+		DA2FD171290C8D8800A9F9CC /* GuestListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestListItemView.swift; sourceTree = "<group>"; };
 		DAB6DE9B29043E9700E6CC8B /* iGuard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iGuard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB6DE9E29043E9700E6CC8B /* iGuardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iGuardApp.swift; sourceTree = "<group>"; };
 		DAB6DEA029043E9700E6CC8B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +78,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA2B6532290C6F3400B72240 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				DA2B6535290C6FE800B72240 /* TableView.swift */,
+				DA2B6537290C716700B72240 /* CarsView.swift */,
+				DA2B6539290C717D00B72240 /* GuestsView.swift */,
+				DA2B653B290C726200B72240 /* SettingsView.swift */,
+				DA2FD165290C7E3A00A9F9CC /* GuestDetailsView.swift */,
+				DA2FD167290C7E4D00A9F9CC /* CarDetailsView.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		DA2FD169290C82DA00A9F9CC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DA2FD16A290C82F100A9F9CC /* GuestModel.swift */,
+				DA2FD16C290C852600A9F9CC /* Status.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DA2FD170290C8D6400A9F9CC /* ListItem */ = {
+			isa = PBXGroup;
+			children = (
+				DA2FD171290C8D8800A9F9CC /* GuestListItemView.swift */,
+			);
+			path = ListItem;
+			sourceTree = "<group>";
+		};
 		DAB6DE9229043E9700E6CC8B = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +127,8 @@
 		DAB6DE9D29043E9700E6CC8B /* iGuard */ = {
 			isa = PBXGroup;
 			children = (
+				DA2FD169290C82DA00A9F9CC /* Model */,
+				DA2B6532290C6F3400B72240 /* Screen */,
 				DAB6DEC7290594F500E6CC8B /* Data */,
 				DAB6DEAC290452F300E6CC8B /* View */,
 				DAB6DE9E29043E9700E6CC8B /* iGuardApp.swift */,
@@ -98,6 +150,7 @@
 		DAB6DEAC290452F300E6CC8B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DA2FD170290C8D6400A9F9CC /* ListItem */,
 				DAB6DEB429057AA200E6CC8B /* Panel */,
 				DAB6DEAD290452FA00E6CC8B /* WeekChart */,
 			);
@@ -134,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				DAB6DEC82905953A00E6CC8B /* DashboardData.swift */,
+				DA2FD16E290C869000A9F9CC /* GuestData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -208,21 +262,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA2B6538290C716700B72240 /* CarsView.swift in Sources */,
 				DAB6DEAF2904534500E6CC8B /* WeekChartColumnView.swift in Sources */,
+				DA2FD166290C7E3A00A9F9CC /* GuestDetailsView.swift in Sources */,
 				DAB6DEA129043E9700E6CC8B /* ContentView.swift in Sources */,
+				DA2FD16B290C82F100A9F9CC /* GuestModel.swift in Sources */,
 				DAB6DEC62905897E00E6CC8B /* ChartColumnModel.swift in Sources */,
 				DAB6DEC0290586D500E6CC8B /* PanelWithCounterAndChartView.swift in Sources */,
 				DAB6DE9F29043E9700E6CC8B /* iGuardApp.swift in Sources */,
 				DAB6DEC22905879500E6CC8B /* PanelWithCounterAndChartModel.swift in Sources */,
 				DAB6DEB32905782B00E6CC8B /* WeekChartAverageLineView.swift in Sources */,
 				DAB6DEBA29057F7400E6CC8B /* PanelCounterView.swift in Sources */,
+				DA2B653A290C717D00B72240 /* GuestsView.swift in Sources */,
 				DAB6DEBE2905839600E6CC8B /* PanelWithCounterModel.swift in Sources */,
 				DAB6DEBC290580EC00E6CC8B /* PanelWithCounterView.swift in Sources */,
+				DA2FD168290C7E4D00A9F9CC /* CarDetailsView.swift in Sources */,
 				DAB6DEB629057AE100E6CC8B /* PanelTitleView.swift in Sources */,
+				DA2B6536290C6FE800B72240 /* TableView.swift in Sources */,
+				DA2FD16D290C852600A9F9CC /* Status.swift in Sources */,
 				DAB6DEB829057C8600E6CC8B /* PanelMessageView.swift in Sources */,
 				DAB6DEC92905953A00E6CC8B /* DashboardData.swift in Sources */,
+				DA2FD16F290C869000A9F9CC /* GuestData.swift in Sources */,
 				DAB6DEB12905689F00E6CC8B /* WeekChartView.swift in Sources */,
 				DAB6DEC42905890200E6CC8B /* ChartModel.swift in Sources */,
+				DA2B653C290C726200B72240 /* SettingsView.swift in Sources */,
+				DA2FD172290C8D8800A9F9CC /* GuestListItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
