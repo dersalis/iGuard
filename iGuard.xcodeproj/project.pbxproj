@@ -17,6 +17,11 @@
 		DA2FD16D290C852600A9F9CC /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2FD16C290C852600A9F9CC /* Status.swift */; };
 		DA2FD16F290C869000A9F9CC /* GuestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2FD16E290C869000A9F9CC /* GuestData.swift */; };
 		DA2FD172290C8D8800A9F9CC /* GuestListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2FD171290C8D8800A9F9CC /* GuestListItemView.swift */; };
+		DA2FD174290D830B00A9F9CC /* CarListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2FD173290D830B00A9F9CC /* CarListItemView.swift */; };
+		DA2FD176290D843A00A9F9CC /* CarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2FD175290D843A00A9F9CC /* CarModel.swift */; };
+		DA2FD178290D892E00A9F9CC /* CarsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2FD177290D892E00A9F9CC /* CarsData.swift */; };
+		DA2FD17B290DAC7200A9F9CC /* DetailLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2FD17A290DAC7200A9F9CC /* DetailLineView.swift */; };
+		DA2FD17D290DAD3E00A9F9CC /* DetailsActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2FD17C290DAD3E00A9F9CC /* DetailsActionButtonView.swift */; };
 		DAB6DE9F29043E9700E6CC8B /* iGuardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB6DE9E29043E9700E6CC8B /* iGuardApp.swift */; };
 		DAB6DEA129043E9700E6CC8B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB6DEA029043E9700E6CC8B /* ContentView.swift */; };
 		DAB6DEA329043E9800E6CC8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB6DEA229043E9800E6CC8B /* Assets.xcassets */; };
@@ -47,6 +52,11 @@
 		DA2FD16C290C852600A9F9CC /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		DA2FD16E290C869000A9F9CC /* GuestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestData.swift; sourceTree = "<group>"; };
 		DA2FD171290C8D8800A9F9CC /* GuestListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestListItemView.swift; sourceTree = "<group>"; };
+		DA2FD173290D830B00A9F9CC /* CarListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListItemView.swift; sourceTree = "<group>"; };
+		DA2FD175290D843A00A9F9CC /* CarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModel.swift; sourceTree = "<group>"; };
+		DA2FD177290D892E00A9F9CC /* CarsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsData.swift; sourceTree = "<group>"; };
+		DA2FD17A290DAC7200A9F9CC /* DetailLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailLineView.swift; sourceTree = "<group>"; };
+		DA2FD17C290DAD3E00A9F9CC /* DetailsActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsActionButtonView.swift; sourceTree = "<group>"; };
 		DAB6DE9B29043E9700E6CC8B /* iGuard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iGuard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB6DE9E29043E9700E6CC8B /* iGuardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iGuardApp.swift; sourceTree = "<group>"; };
 		DAB6DEA029043E9700E6CC8B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +106,7 @@
 			children = (
 				DA2FD16A290C82F100A9F9CC /* GuestModel.swift */,
 				DA2FD16C290C852600A9F9CC /* Status.swift */,
+				DA2FD175290D843A00A9F9CC /* CarModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -104,8 +115,18 @@
 			isa = PBXGroup;
 			children = (
 				DA2FD171290C8D8800A9F9CC /* GuestListItemView.swift */,
+				DA2FD173290D830B00A9F9CC /* CarListItemView.swift */,
 			);
 			path = ListItem;
+			sourceTree = "<group>";
+		};
+		DA2FD179290DAC4300A9F9CC /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				DA2FD17A290DAC7200A9F9CC /* DetailLineView.swift */,
+				DA2FD17C290DAD3E00A9F9CC /* DetailsActionButtonView.swift */,
+			);
+			path = Details;
 			sourceTree = "<group>";
 		};
 		DAB6DE9229043E9700E6CC8B = {
@@ -150,6 +171,7 @@
 		DAB6DEAC290452F300E6CC8B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DA2FD179290DAC4300A9F9CC /* Details */,
 				DA2FD170290C8D6400A9F9CC /* ListItem */,
 				DAB6DEB429057AA200E6CC8B /* Panel */,
 				DAB6DEAD290452FA00E6CC8B /* WeekChart */,
@@ -188,6 +210,7 @@
 			children = (
 				DAB6DEC82905953A00E6CC8B /* DashboardData.swift */,
 				DA2FD16E290C869000A9F9CC /* GuestData.swift */,
+				DA2FD177290D892E00A9F9CC /* CarsData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -262,11 +285,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA2FD178290D892E00A9F9CC /* CarsData.swift in Sources */,
 				DA2B6538290C716700B72240 /* CarsView.swift in Sources */,
 				DAB6DEAF2904534500E6CC8B /* WeekChartColumnView.swift in Sources */,
 				DA2FD166290C7E3A00A9F9CC /* GuestDetailsView.swift in Sources */,
 				DAB6DEA129043E9700E6CC8B /* ContentView.swift in Sources */,
 				DA2FD16B290C82F100A9F9CC /* GuestModel.swift in Sources */,
+				DA2FD176290D843A00A9F9CC /* CarModel.swift in Sources */,
 				DAB6DEC62905897E00E6CC8B /* ChartColumnModel.swift in Sources */,
 				DAB6DEC0290586D500E6CC8B /* PanelWithCounterAndChartView.swift in Sources */,
 				DAB6DE9F29043E9700E6CC8B /* iGuardApp.swift in Sources */,
@@ -274,6 +299,9 @@
 				DAB6DEB32905782B00E6CC8B /* WeekChartAverageLineView.swift in Sources */,
 				DAB6DEBA29057F7400E6CC8B /* PanelCounterView.swift in Sources */,
 				DA2B653A290C717D00B72240 /* GuestsView.swift in Sources */,
+				DA2FD174290D830B00A9F9CC /* CarListItemView.swift in Sources */,
+				DA2FD17D290DAD3E00A9F9CC /* DetailsActionButtonView.swift in Sources */,
+				DA2FD17B290DAC7200A9F9CC /* DetailLineView.swift in Sources */,
 				DAB6DEBE2905839600E6CC8B /* PanelWithCounterModel.swift in Sources */,
 				DAB6DEBC290580EC00E6CC8B /* PanelWithCounterView.swift in Sources */,
 				DA2FD168290C7E4D00A9F9CC /* CarDetailsView.swift in Sources */,

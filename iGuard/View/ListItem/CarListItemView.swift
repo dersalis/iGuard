@@ -1,5 +1,5 @@
 //
-//  GuestListItemView.swift
+//  CarListItemView.swift
 //  iGuard
 //
 //  Created by Damian Ruta on 29/10/2022.
@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct GuestListItemView: View {
-    var guest: Guest
+struct CarListItemView: View {
+    var car: Car
     
     @State var statusColor: Color = Color.gray
     
@@ -26,18 +26,19 @@ struct GuestListItemView: View {
                 }
                 
                 VStack(alignment: .leading) {
-                    Text(guest.name)
+                    Text(car.registrationNo)
                         .font(.title2)
                         .foregroundColor(.primary)
                         .padding(.bottom, 4)
                     HStack {
-                        Label(guest.phone, systemImage: "candybarphone")
+                        Label(car.driverName, systemImage: "person")
                             .foregroundColor(.secondary)
-                            .frame(width: 140, alignment: .leading)
-                        Label(guest.company, systemImage: "building.2")
+                            .frame(width: 200, alignment: .leading)
+                        Label(car.company, systemImage: "building.2")
                             .foregroundColor(.secondary)
                     }
-                    Label(guest.arrivalDate.formatted(date: .long, time: .shortened), systemImage: "calendar")
+                    .padding(.bottom, -2)
+                    Label(car.arrivalDate.formatted(date: .long, time: .shortened), systemImage: "calendar")
                         .foregroundColor(.secondary)
                 }
                 .frame(alignment: .leading)
@@ -46,9 +47,9 @@ struct GuestListItemView: View {
             }
         }
         .onAppear {
-            if guest.status == Status.outside {
+            if car.status == Status.outside {
                 statusColor = Color.red
-            } else if guest.status == Status.inside {
+            } else if car.status == Status.inside {
                 statusColor = Color.green
             } else {
                 statusColor = Color.gray
@@ -57,9 +58,9 @@ struct GuestListItemView: View {
     }
 }
 
-struct GuestListItemView_Previews: PreviewProvider {
+struct CarListItemView_Previews: PreviewProvider {
     static var previews: some View {
-        GuestListItemView(guest: guestsData[1])
+        CarListItemView(car: carsData[1])
             .previewLayout(.fixed(width: 400, height: 100))
     }
 }
